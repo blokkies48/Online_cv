@@ -1,0 +1,52 @@
+.code_block{
+  background-color: rgb(56, 56, 56);
+  height: 500px;
+  color: aliceblue;
+}
+
+.func-name{
+  color: rgb(248, 246, 150);
+}
+.class_name{
+  color: aquamarine;
+}
+.var-highlight{
+    color: #9ac9f0;
+  }
+
+.class-highlight{
+    color: #3e5ad8;
+  }
+.string-highlight{
+    color: rgba(253, 149, 90, 0.8);
+}
+
+.func-highlight{
+  color: #647be2;
+}
+  
+#typewriter{
+      font-size: 1em;
+      margin: 0;
+      font-family: "Courier New";
+  
+      &:after{
+        content: "|";
+        animation: blink 500ms linear infinite alternate;
+      }
+  }
+  
+@-webkit-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+  }
+  
+@-moz-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+  }
+  
+@keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+  }
