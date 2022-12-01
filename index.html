@@ -25,22 +25,8 @@
             
                 <img src="assets/images/me_photo.jpg" alt="Photo of me" class="profile-image">
     
-                
-                <div class="bird-container bird-container--one">
-                    <div class="bird bird--one"></div>
-                </div>
-                
-                <div class="bird-container bird-container--two">
-                    <div class="bird bird--two"></div>
-                </div>
-                
-                <div class="bird-container bird-container--three">
-                    <div class="bird bird--three"></div>
-                </div>
-                
-                <div class="bird-container bird-container--four">
-                    <div class="bird bird--four"></div>
-                </div>
+            
+        
                 
             </div>
             <!--credit: https://codepen.io/matchboxhero/pen/RLebOY?editors=0100-->
@@ -64,221 +50,35 @@
                 Short Bio
             </h2>
             <div class="grid-container-1">
+                
                 <div class="grid-item-1">
-                    <h3>Who am I</h3>
+    
                     <p>
-                        As an introverted person, time spent with family is valuable to me. I grew up in Mozambique, exposing me to a wide variety of cultures and business indutries. Being non-biased and fair is important to me.
-                    </p>
+                        I am an introverted person that is easy to talk to. I care for people around me, but I’m not a people pleaser. In my opinion, it is essential to be non-biased, fair, and not harsh.                    </p>
                 </div>
                 <div class="grid-item-2">
-                    <h3>What's my experience</h3>
+
                     <p>
-                        My gap year was spent working in various Mozambican port as a ship surveyor under international ship captians followed by one international maritime course. I South Africa I trained and worked as a boilermaker. In 2020 I started teaching myself how to code and create websites, where I have learned a lot about SEO, understanding client requirements, and developement processes.
+                        My work ethic is to stay focused on the task at hand and to get it done and not procrastinate.
                     </p>
                 </div>
                 <div class="grid-item-3">
-                    <h3>My motives</h3>
+
                     <p>
-                        My moto is to alway go beyond the normal, to constantly learn, and imporve myself. My dream is to work in the gaming industry, as games consist a lot of logic which is what I enjoy.
+                        Having good relationships with my co-workers is important for me because I would like to establish a pleasant work environment.
                     </p>
                 </div>
             </div>
         </div>
 </div>
 
-<h2>Skills and Competencies</h2>
+<h2>My work</h2>
 <hr>
 <!--Code block https://css-tricks.com/snippets/css/typewriter-effect/-->
 <!-- Software skills -->
-<div class="code_block">
 
-<pre id="typewriter">
-        
-    <span class="class-highlight">class</span> <span class="class_name">SoftwareSkills</span>():
-        <span class="func-highlight">def</span> <span class="func-name">__init__</span>(<span class="var-highlight">self</span>):
-            <span class="var-highlight">programming_languages</span> = [
-                <span class="string-highlight">"python"</span>, 
-                <span class="string-highlight">"C#"</span>
-                    ] 
-            <span class="var-highlight">mockup_languages</span> = [
-                <span class="string-highlight">"html"</span>, 
-                <span class="string-highlight">"css"</span>, 
-                <span class="string-highlight">"xml"</span>
-                    ]
-            <span class="var-highlight">websites</span> = [
-                <span class="string-highlight">"Cpanel"</span>, 
-                <span class="string-highlight">"wordpress"</span>
-                    ]
-            <span class="var-highlight">programmes</span> = [
-                <span class="string-highlight">"Affinity Photo"</span>,
-                <span class="string-highlight">"Affinity Designer"</span>, 
-                <span class="string-highlight">"Affinity Publisher"</span>,
-                <span class="string-highlight">"Davnici Resolve"</span>,
-                <span class="string-highlight">"Unity"</span>
-                    ]
-            <span class="var-highlight">google_workspace</span> = [
-                <span class="string-highlight">"Sheets"</span>,
-                <span class="string-highlight">"Docs"</span>
-                    ]
-    </pre>
-    <!--Java script for this animation-->
-    <script>
-        function setupTypewriter(t) {
-        var HTML = t.innerHTML;
-    
-        t.innerHTML = "";
-    
-        var cursorPosition = 0,
-            tag = "",
-            writingTag = false,
-            tagOpen = false,
-            typeSpeed = 10,
-        tempTypeSpeed = 0;
-    
-        var type = function() {
-        
-            if (writingTag === true) {
-                tag += HTML[cursorPosition];
-            }
-    
-            if (HTML[cursorPosition] === "<") {
-                tempTypeSpeed = 0;
-                if (tagOpen) {
-                    tagOpen = false;
-                    writingTag = true;
-                } else {
-                    tag = "";
-                    tagOpen = true;
-                    writingTag = true;
-                    tag += HTML[cursorPosition];
-                }
-            }
-            if (!writingTag && tagOpen) {
-                tag.innerHTML += HTML[cursorPosition];
-            }
-            if (!writingTag && !tagOpen) {
-                if (HTML[cursorPosition] === " ") {
-                    tempTypeSpeed = 0;
-                }
-                else {
-                    tempTypeSpeed = (Math.random() * typeSpeed) + 50;
-                }
-                t.innerHTML += HTML[cursorPosition];
-            }
-            if (writingTag === true && HTML[cursorPosition] === ">") {
-                tempTypeSpeed = (Math.random() * typeSpeed) + 50;
-                writingTag = false;
-                if (tagOpen) {
-                    var newSpan = document.createElement("span");
-                    t.appendChild(newSpan);
-                    newSpan.innerHTML = tag;
-                    tag = newSpan.firstChild;
-                }
-            }
-    
-            cursorPosition += 1;
-            if (cursorPosition < HTML.length - 1) {
-                setTimeout(type, tempTypeSpeed);
-            }
-    
-        };
-    
-        return {
-            type: type
-        };
-    }
-    
-    var typer = document.getElementById('typewriter');
-    
-    typewriter = setupTypewriter(typewriter);
-    
-    typewriter.type();
-    </script>
-</div>
-<hr>
-<h3>Hard Skills</h3>
-    <div class="list-1">
-        <h4>Welding</h4>
-        <dl class="list-1">
-            <li>
-                MIG
-            </li>
-            <li>
-                Stick
-            </li>
-            <li>
-                Flux-core
-            </li>
-        </dl>
-        <h4>Cutting</h4>
-        <dl class="list-1">
-            <li>
-                Oxy-fuel(LPG/Acetylene)
-            </li>
-            <li>
-                Angle grinder
-            </li>
-        </dl>
-        <h4>General metalwork</h4>
-        <dl class="list-1">
-            <li>
-                Bending
-            </li>
-            <li>
-                Rolling
-            </li>
-            <li>
-                Marking
-            </li>
-            <li>
-                Drilling
-            </li>
-            <li>
-                Heat treatment
-            </li>
-        </dl>
-        <h4>Development of sheet metal</h4>
-    </div> 
-<!--Next block just basic tags -->
-<hr>
-<div class="education">
-    <h2>Education</h2>
-    <h3>IGCSE (International General Certificate of Secondary Education)</h3>
-    <p>
-        I received IGCSE in 2013 from Maputo International School. I can say I have been every lucky to be such a school where the teachers really was exceptional.
-    </p>
-    <h3>Maritime studies</h3>
-    <p>
-        Dit first year of maritime studies at DUT in South africa.
-    </p>
-    <h3>Boilermaker Red Seal</h3>
-    <p>
-        I received my read seal in 2020 from MCD in Meyerton. I did extremely well where I was ahead and help out the other students involving development.
-    </p>
-    <h3>HyperionDev Software engineering bootcamp</h3>
-    <p>
-        Started the bootcamp in September 2022. I am currently on 99% average. I help out other students in the discord server where I can. <a href="https://www.hyperiondev.com/portfolio/94638/" target="_blank">My report</a><!--Adds a link in the end-->
-    </p>
-</div>
-<hr>
-<!--Basic tags for this block-->
-<h2>Work Experience</h2>
-<div class="work-xp">
-    <h3>Early Years</h3>
-    <p>
-        I had a few jobs while still in school. After school I worked for a year as an assistant quantity surveyor for the loading of coal and magnetite in Mozambique.
-    </p>
-    <h3>2016 - 2022</h3>
-    <p>
-        I worked as a apprentice to a qualified boilermaker from 2016 to 2022 where I went from knowing nothing to being able to write my own blog and train other apprentices.<br>
-        I was studying and making websites on the side since 2022.
-    </p>
-    <h3>Current</h3>
-    <p>
-        Currently I am working as a freelance wordpress web developer and SEO consultant. While studying software engineering.
-    </p>
-</div>
-<hr>
+
+
 <!--Sorted in h4 then list elements. with links in them-->
 <div class="list-1">
     <h3>Websites wordpress</h3>
@@ -302,7 +102,8 @@
             <a href="https://dhconsultores.net/" target="_blank">DH Consultores</a>
         </li>
         <li>
-            <a href="https://sekuriteitsondergrense.co.za/" target="_blank">Sekuriteit Sonder Grense</a> Most comprehensive 
+            <a href="https://sekuriteitsondergrense.co.za/" target="_blank">Sekuriteit Sonder Grense</a>
+            Has a login system for employees to accesses documents to reduce reliance on paper systems.
         </li>
 
     </dl>
@@ -322,10 +123,55 @@
 <dl class="list-1">
     <li>
         <p>
-            Download manager: Small project I made that manages the download folder. It can create the sort folders and then sorts your downloads into said folders. It sorts them by comparing the extensions to extensions in separate text files.
+            <h3>KivyMD App</h3>
+            <h4>Description</h4>
+            <p>Small app I am working on just for practice that works with a database for user login, registration, and saved data </p>
+            <video width="500" height="500" controls>
+                <source src="assets/Video/kivyMD_demo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
         </p>
-        <a href="https://github.com/blokkies48/Downloads_manager" target="_blank">Github</a>
+        <a href="https://github.com/blokkies48/kivy_app_form">GitHub repo for code</a>
+
+        <hr>
     </li>
+    <li>
+        <p>
+            <h3>AppSheet App</h3>
+            <h4>Description</h4>
+            <p>Similar to the concept of the above mentioned app just uses AppSheet to work with a google sheet. Please note it's still a work in progress </p>
+            <video width="500" height="500" controls>
+                <source src="assets/Video/appsheetapp.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+        </p>
+        <hr>
+    </li>
+    <li>
+        <p>
+            <h3>Small Django Project</h3>
+            <h4>Description</h4>
+            <p>Small Django project I did for my BootCamp. It consists of some user login and the ability to have discussions on a topic similar to a forum. It is extremely basic, but covers most of the concept of Django. </p>
+            <video width="500" height="500" controls>
+                <source src="assets/Video/django.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+        </p>
+        <a href="https://github.com/blokkies48/django_project">GitHub repo for code</a>
+
+        <hr>
+    </li>
+    <h2>Breakdown</h2>
+    <p>
+        These are just some of the projects I would like to highlight. I have written a few scripts, for example one I did is to <a href="https://github.com/blokkies48/Downloads_manager">sort my download folder</a> that anyone can use. 
+    </p>
+    <p>
+        I have also used kivy to create a <a href="https://github.com/blokkies48/Calculator_project">calculator app</a> that has a exe you can download and use. 
+    </p>
+    <p>
+        There I a lot more and that I left out intentionally because I don't want to overwhelm. You can check everything out on my <a href="https://github.com/blokkies48">GitHub</a>.
+    </p>
+    
 </dl>
 
 
